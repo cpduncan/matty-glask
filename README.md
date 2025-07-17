@@ -1,6 +1,6 @@
 # MATTYGLASK Version 0.4
 
-Programmer : Corbin Duncan
+Programmer : Corbin Duncan  
 Creative Director : Wyatt Latham
 
 ## Custom JRE image included built with jdeps:
