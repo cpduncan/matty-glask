@@ -54,12 +54,12 @@ public class GameClient {
 
             while (true) {
                   try {
-                        switch ((String) inputStream.readObject()) {
+                       switch ((String) inputStream.readObject()) {
                               case "TURN":
                                     testTurn(inputStream, outputStream);
                                     break;
                               case "UPDATE":
-                                    recieveUpdate(inputStream);
+                                    receiveUpdate(inputStream);
                                     break;
                         }
                   } catch (ClassNotFoundException | IOException e) {
@@ -130,7 +130,7 @@ public class GameClient {
             }
       }
 
-      public static void recieveUpdate(ObjectInputStream inputStream) throws ClassNotFoundException, IOException {
+      public static void receiveUpdate(ObjectInputStream inputStream) throws ClassNotFoundException, IOException {
             setTilemap((Tile[][]) inputStream.readObject());
             gp.repaint();
       }
